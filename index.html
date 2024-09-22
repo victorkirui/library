@@ -7,7 +7,43 @@
     <title>Library App</title>
   </head>
   <body>
-    Hello World
+    <h1>MY LIBRARY</h1>
+    <button class="new-book btn">ADD NEW BOOK</button>
+    <form action="./" method="post" class="hide">
+      <div>
+        <label for="author">AUTHOR</label>
+        <input type="text" name="author" id="author" />
+      </div>
+
+      <div>
+        <label for="title">TITLE</label>
+        <input type="text" name="title" id="title" />
+      </div>
+
+      <div>
+        <label for="pages">PAGES</label>
+        <input type="number" name="pages" id="pages" />
+      </div>
+
+      <fieldset>
+        <legend>Have you read the book?</legend>
+        <div>
+          <input type="radio" name="read" id="no" value="no" checked />
+          <label for="no">No</label>
+        </div>
+        <div>
+          <input type="radio" name="read" id="yes" value="yes" />
+          <label for="yes">Yes</label>
+        </div>
+      </fieldset>
+      <button type="submit" class="submit-btn btn">ADD BOOK</button>
+    </form>
+    <button type="button" class="show btn">Show Books</button>
+    <div>
+      <h2>My Books</h2>
+      <div class="books-container"></div>
+    </div>
+
     <script src="./main.js"></script>
   </body>
 </html>

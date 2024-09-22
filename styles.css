@@ -1,0 +1,61 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 600px;
+  margin: auto;
+  padding: 1rem;
+
+  h1 {
+    margin: 1rem 0;
+  }
+
+  h2 {
+    margin: 1.5rem 0 0.7rem;
+  }
+}
+
+.hide {
+  display: none;
+}
+.books-card {
+  display: inline-block;
+  border: 2px solid blue;
+  padding: 10px;
+  margin: 10px;
+}
+
+.btn {
+  padding: 0.8rem 2rem;
+  text-transform: uppercase;
+}
+
+form {
+  width: 600px;
+  padding: 0.8rem 0;
+  margin: 1.3rem 0;
+
+  input[type="text"],
+  input[type="number"] {
+    display: block;
+    width: 100%;
+  }
+
+  input[type="text"],
+  input[type="number"] {
+    outline: none;
+    padding: 6px 10px;
+    margin-bottom: 0.8rem;
+    margin-top: 0.4rem;
+  }
+
+  fieldset {
+    padding: 10px;
+    margin-bottom: 1.2rem;
+  }
+}
